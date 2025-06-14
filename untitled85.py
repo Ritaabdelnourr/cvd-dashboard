@@ -153,7 +153,7 @@ st.metric('Hold-out AUC', f'{auc:.3f}')
 (PROJ/"requirements.txt").write_text("streamlit\nplotly\npandas\nnumpy\ngeopandas\nshapely\nscikit-learn\n")
 print("✅ project scaffolded at", PROJ.resolve())
 
-!pip install streamlit plotly --quiet
+
 import threading, os, time, random, json
 PORT=8501
 def run(): os.system(f"streamlit run cvd_app/Home.py --server.headless true --server.address 0.0.0.0 --server.port {PORT}")
