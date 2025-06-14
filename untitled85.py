@@ -152,6 +152,13 @@ st.metric('Hold-out AUC', f'{auc:.3f}')
 # ── requirements.txt ───────────────────────────────────
 (PROJ/"requirements.txt").write_text("streamlit\nplotly\npandas\nnumpy\ngeopandas\nshapely\nscikit-learn\n")
 print("✅ project scaffolded at", PROJ.resolve())
+streamlit
+plotly
+pandas
+numpy
+geopandas      # if you use the map
+shapely
+scikit-learn   # for the predictor
 
 
 import threading, os, time, random, json
